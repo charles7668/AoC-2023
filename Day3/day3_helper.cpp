@@ -2,9 +2,9 @@
 #include <fstream>
 #include <string>
 
-using namespace day3;
+using namespace Day3;
 
-TestData day3::parse_file(const std::string& file_path) {
+TestData Day3::parse_file(const std::string& file_path) {
     using std::string , std::ifstream , std::vector;
     ifstream input_file(file_path);
     string line;
@@ -19,10 +19,10 @@ TestData day3::parse_file(const std::string& file_path) {
     return TestData(std::move(data));
 }
 
-bool day3::is_number(const char c) {
+bool Day3::is_number(const char c) {
     return c >= '0' && c <= '9';
 }
 
-bool day3::is_symbol(const char c) {
+bool Day3::is_symbol(const char c) {
     return c != '.' && (c < '0' || c > '9');
 }

@@ -1,8 +1,8 @@
-#include "helper.h"
+#include "day2_helper.h"
 #include "day2_part1.h"
 using std::vector , std::array , std::string ;
 
-int day2_part1(const string& input_file) {
+int Day2::day2_part1(const string& input_file) {
     const TestData test_data = parse(input_file);
     int sum = 0;
     const vector<TestData::GameData>& game_data = test_data.game_data;

@@ -1,5 +1,5 @@
 #include "day1_part2.h"
-#include "helper.h"
+#include "day1_helper.h"
 #include <unordered_map>
 using std::vector , std::string;
 
@@ -15,7 +15,7 @@ static std::unordered_map<string, int> number_string_map = {
         {"nine", 9},
 };
 
-int day1_part2(const std::string& file_name) {
+int Day1::day1_part2(const std::string& file_name) {
     const TestData test_data = parse_file(file_name);
     const vector<string>& data_set = test_data.data_set;
     int sum = 0;

@@ -2,10 +2,10 @@
 #include <fstream>
 #include <iostream>
 #include "day1_part1.h"
-#include "helper.h"
+#include "day1_helper.h"
 using std::vector , std::string , std::cout ,std::endl;
 
-int day1_part1(const std::string& file_name) {
+int Day1::day1_part1(const std::string& file_name) {
     const TestData test_data = parse_file(file_name);
     const vector<string>& data_set = test_data.data_set;
     int sum = 0;

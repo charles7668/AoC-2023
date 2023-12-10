@@ -5,7 +5,7 @@
 
 #include "day3_helper.h"
 
-using namespace day3;
+using namespace Day3;
 
 namespace {
     std::unordered_map<int, std::unordered_map<int, int>> value_indexes;
@@ -39,7 +39,7 @@ void get_value_indexes(const std::vector<std::vector<char>>& char_map, const int
     }
 }
 
-int day3::day3_part1(const std::string& path) {
+int Day3::day3_part1(const std::string& path) {
     using std::vector , std::string;
     const TestData test_data = parse_file(path);
     const int row_count = static_cast<int>(test_data.data.size());

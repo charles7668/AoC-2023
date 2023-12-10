@@ -1,10 +1,10 @@
-#include "helper.h"
+#include "day2_helper.h"
 #include <fstream>
 #include <sstream>
 #include <unordered_map>
 using std::string , std::vector , std::array;
 
-TestData parse(const std::string& input_file_name) {
+Day2::TestData Day2::parse(const std::string& input_file_name) {
     std::ifstream input_file(input_file_name, std::ios::in);
     string line;
     vector<TestData::GameData> result;

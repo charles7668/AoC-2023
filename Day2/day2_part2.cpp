@@ -1,11 +1,11 @@
 #include "day2_part2.h"
-#include "helper.h"
+#include "day2_helper.h"
 #include <string>
 #include <vector>
 
 using std::vector , std::array , std::string ;
 
-int day2_part2(const std::string& input_file) {
+int Day2::day2_part2(const std::string& input_file) {
     const TestData test_data = parse(input_file);
     int sum = 0;
     const vector<TestData::GameData>& game_data = test_data.game_data;

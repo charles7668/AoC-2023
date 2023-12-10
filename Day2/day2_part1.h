@@ -1,3 +1,6 @@
 #pragma once
+#include <string>
 
-int day2_part1(const std::string& input_file);
+namespace Day2 {
+    int day2_part1(const std::string& input_file);
+}

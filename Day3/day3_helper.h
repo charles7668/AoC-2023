@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-namespace day3 {
+namespace Day3 {
     class TestData {
     public:
         std::vector<std::vector<char>> data;

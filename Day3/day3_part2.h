@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
 
-namespace day3 {
+namespace Day3 {
     int day3_part2(const std::string& path);
 }
